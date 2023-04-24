@@ -8,9 +8,8 @@ export class blogPageHelper {
         cy.get('input[id="newSearchId"]').type(searchInput+"{enter}")
     }
 
-    static  searchOutput(counter) {
-        cy.get('div[id="newPopupSearch"]').find('div[class="postItemBInr"]').should('have.lengthOf', counter)
-        cy.get('div[id="newPopupSearch"]').then(() => {
+    static searchOutput(counter) {
+        cy.get('div[id="newPopupSearch"]').find('div[class="postItemBInr"]').should('have.lengthOf', counter).then(() => {
             cy.get('div[class="postItemTitle equalTitle"]').invoke('text').then(text => {
                 this.blogPageVariables.TitlesFromSearch.push(text);
             })
