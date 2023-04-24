@@ -1,0 +1,17 @@
+{
+  "author": "",
+  "license": "ISC",
+  "name": "",
+  "scripts": {},
+  "dependencies": {
+    "cypress": "^12.2.0",
+    "cypress-mochawesome-reporter": "^3.0.0",
+    "mongodb": "^4.6.0",
+    "@types/underscore": "^1.9.4",
+    "cypress-terminal-report": "^5.0.0",
+    "@cypress/schema-tools": "^4.7.9",
+    "jsonpointer": "^5.0.0",
+    "json-schema": "^0.4.0",
+    "typescript": "^3.7.5"
+  }
+}
